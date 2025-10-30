@@ -1,0 +1,5 @@
+export default {
+    allowModels: ["internal:demo", "openai:gpt-4o", "anthropic:sonnet"],
+    maxPromptChars: 2000
+  };
+  

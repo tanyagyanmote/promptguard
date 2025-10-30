@@ -1,4 +1,4 @@
-import policy from "../policy.json" assert { type: "json" };
+import policy from "../policy.js";
 import { redactPII } from "./redactor.js";
 import { auditRecord } from "./audit.js";
 

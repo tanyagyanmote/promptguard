@@ -3,7 +3,7 @@ import helmet from "helmet";
 import dotenv from "dotenv";
 import { createRequire } from "module";
 const require = createRequire(import.meta.url);
-const policy = require("../policy.json");
+import policy from "../policy.js";
 import { redactPII } from "./redactor.js";
 import { auditRecord } from "./audit.js";
 
