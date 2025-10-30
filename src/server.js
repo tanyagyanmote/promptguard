@@ -1,7 +1,9 @@
 import express from "express";
 import helmet from "helmet";
 import dotenv from "dotenv";
-import policy from "../policy.json" assert { type: "json" };
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
+const policy = require("../policy.json");
 import { redactPII } from "./redactor.js";
 import { auditRecord } from "./audit.js";
 
